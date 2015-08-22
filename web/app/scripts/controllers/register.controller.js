@@ -8,7 +8,7 @@
  * Controller of the jwtAuthApp
  */
 angular.module('jwtAuthApp')
-  .controller('RegisterCtrl', function ($scope, $http) {
+  .controller('RegisterCtrl', function ($scope, $http, authToken) {
 
 
     $scope.submit = function(){
@@ -22,6 +22,7 @@ angular.module('jwtAuthApp')
 
       promise.then(function(response){
         console.log('http success callback');
+        authToken.setToken(response.token);
         console.log(response.data)
       }, function(error){
         console.log('http error callback');
