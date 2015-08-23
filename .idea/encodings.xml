@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/main.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/route-config.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/register.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/configs/http-interceptor.config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/configs/route.config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/controllers/header.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/controllers/jobs.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/controllers/logout.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/controllers/register.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/scripts/services/authtoken.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/views/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/app/views/jobs.html" charset="UTF-8" />
   </component>
 </project>
