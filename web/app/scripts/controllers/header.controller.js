@@ -8,7 +8,7 @@
  * Controller of the jwtAuthApp
  */
 angular.module('jwtAuthApp')
-  .controller('HeaderCtrl', function ($scope, authToken) {
+  .controller('HeaderController', function ($scope, authToken) {
 
       $scope.isAuthenticated = authToken.isAuthenticated;
 

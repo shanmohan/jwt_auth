@@ -1,31 +1,22 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name jwtAuthApp.controller:RegisterCtrl
- * @description
- * # RegisterCtrl
- * Controller of the jwtAuthApp
- */
 angular.module('jwtAuthApp')
-  .controller('RegisterCtrl', function ($scope, $http, authToken) {
+  .controller('RegisterCtrl', function ($scope, $http, authToken, $state) {
 
-
-    $scope.submit = function(){
+    $scope.submit = function () {
 
       var requestJson = {
-        email : $scope.email,
-        password : $scope.password
+        email: $scope.email,
+        password: $scope.password
       };
 
       var promise = $http.post('http://localhost:3000/register', requestJson);
 
-      promise.then(function(response){
-        console.log('http success callback');
-        authToken.setToken(response.token);
-        console.log(response.data)
-      }, function(error){
-        console.log('http error callback');
+      promise.then(function (response) {
+        console.log(response);
+        authToken.setToken(response.data.token);
+        $state.go('main');
+      }, function (error) {
         console.log(error);
       });
 
